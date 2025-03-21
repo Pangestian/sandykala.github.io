@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="database.js"></script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { getDatabase, ref, set } from "firebase/database";
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAAcJmxRgMma8_-8Jk-zI6LitQYlHwJ2pY",
+    authDomain: "sandykala-b0e5d.firebaseapp.com",
+    projectId: "sandykala-b0e5d",
+    storageBucket: "sandykala-b0e5d.firebasestorage.app",
+    messagingSenderId: "699883331602",
+    appId: "1:699883331602:web:dbc316da8db015c10e78cb",
+    measurementId: "G-F5V8WVCSVD"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+    
+    
+  function writeUserData(name, text) {
+  const db = getDatabase();
+  set(ref(db, 'users/' + userId), {
+    username: name,
+    text: text
+  });
+}
+
+writeUserData("Pangestian", "Keren bet");
+</script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Komunitas Server Minecraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <p class="teksbesar">SandyKala RPG</p>
+        <center>
+          <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#address">Server</a></li>
+                <li><a href="#server">Server</a></li>
+                <li><a href="#komunitas">Komunitas</a></li>
+                <li><a href="#donasi">Donasi</a></li>
+                <li><a href="map.html">Map</a></li>
+            </ul>
+        </nav>
+     </center>
+    </header>
+    <main>
+        <section id="beranda">
+            <h1>Selamat Datang di Komunitas Sandykala RPG!</h1>
+            <p>Ini adalah komunitas server Minecraft yang menyediakan pengalaman bermain yang menyenangkan dan realistis dengan dukungan crossplay Minecraft Java dan Minecraft Bedrock.</p>
+        </section>
+        <section id="address">
+            <h1>IP Address Minecraft Java dan Minecraft Bedrock!</h1>
+            <p>IP : sandykala.my.id.</p>
+            <p>Port : 19132</p>
+        </section>
+        <section id="server">
+            <h1>Server Kami</h1>
+            <p>Memiliki beberapa fitur unik seperti:</p>
+            <ul>
+                <li>Spartan Weaponry</li>
+                <li>Custom World Generation</li>
+                <li>Custom Enchant</li>
+                <li>Faction Claim Land</li>
+                <li>Jobs Economy</li>
+                <li>Gun Weapon</li>
+            </ul>
+        </section>
+        <section id="komunitas">
+            <h1>Komunitas Kami</h1>
+            <p>Kami memiliki komunitas yang aktif:</p>
+            <ul>
+                <li><a href="https://chat.whatsapp.com/FDMxKRQbqi4GP60ijWxCyq">Grup Whats'App</a></li>
+                <li>Grup Discord</li>
+                <li>Akun TikTok</li>
+            </ul>
+        </section>
+        <section id="donasi">
+            <h1>Donasi</h1>
+            <p>Kami menerima donasi untuk membantu menjaga server kami tetap online:</p>
+            <ul>
+                <li>PayPal</li>
+                <li>Bank Transfer</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Komunitas Server Minecraft</p>
+    </footer>
+</body>
+</html>
