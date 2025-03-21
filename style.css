@@ -6,6 +6,41 @@ body {
     color: black;
 }
 
+table {
+  border-collapse: collapse; /* Remove default spacing between cells */
+  width: 100%; /* Make the table take up the full width of its container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  border-radius: 8px; /* Add rounded corners to the table */
+  overflow: hidden; /* Hide any content that overflows the rounded corners */
+}
+
+th, td {
+  padding: 12px 15px; /* Add more spacing inside the cells */
+  text-align: left; /* Align text to the left */
+  border-bottom: 1px solid #ddd; /* Add a light border at the bottom of each cell */
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.35); /* Light gray background for the header */
+  font-weight: bold; /* Make the header text bold */
+  text-transform: uppercase; /* Convert header text to uppercase */
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9; /* Light gray background for even rows */
+}
+
+tr:hover {
+  background-color: rgba(98, 185, 255, 0.35); /* Lighter gray background on hover */
+  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+
+/* Add a special style for the last row */
+tr:last-child td {
+  border-bottom: none; /* Remove the bottom border from the last row */
+}
+
+
 .teksbesar {
     padding: 20px;
     text-align: center;

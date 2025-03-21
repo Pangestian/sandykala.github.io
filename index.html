@@ -17,7 +17,8 @@
                 <li><a href="#server">Server</a></li>
                 <li><a href="#komunitas">Komunitas</a></li>
                 <li><a href="#donasi">Donasi</a></li>
-                <li><a href="map.html">Map</a></li>
+                <li><a href="http://node2.quenssshost.my.id:25521">Map</a></li>
+                <li><a href="rating.html">Rating</a></li>
             </ul>
         </nav>
      </center>
@@ -62,41 +63,13 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2023 Komunitas Server Minecraft</p>
-    </footer>
-  <script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAAcJmxRgMma8_-8Jk-zI6LitQYlHwJ2pY",
-    authDomain: "sandykala-b0e5d.firebaseapp.com",
-    databaseURL: "https://sandykala-b0e5d-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "sandykala-b0e5d",
-    storageBucket: "sandykala-b0e5d.firebasestorage.app",
-    messagingSenderId: "699883331602",
-    appId: "1:699883331602:web:dbc316da8db015c10e78cb",
-    measurementId: "G-F5V8WVCSVD"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-
-
-function writeUserData(name, text) {
-  const db = getDatabase();
-  set(ref(db, 'users/' + userId), {
-    username: name,
-    text: text
-  });
-}
-</script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

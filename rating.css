@@ -1,0 +1,100 @@
+/* General form styling */
+form {
+  width: 100%;
+  max-width: 600px; /* Limit the form width for readability */
+  margin: 20px auto; /* Center the form horizontally */
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.24); /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Label styling */
+label {
+  display: block; /* Make labels take up the full width */
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input and textarea styling (reusing the fancy input styles) */
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.31);
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: white;
+  box-shadow: 0 0 5px white;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Placeholder styling (consistent with input styles) */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #aaa;
+}
+
+:-moz-placeholder { /* Firefox 19+ */
+  color: #aaa;
+}
+
+::-moz-placeholder { /* Firefox 18- */
+  color: #aaa;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: #aaa;
+}
+
+::placeholder { /* Modern Browsers */
+  color: #aaa;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+/* Add some spacing between form elements */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style for error messages (for validation) */
+.error-message {
+  color: #f44336; /* Red color for error messages */
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
