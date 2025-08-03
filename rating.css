@@ -1,131 +1,70 @@
-/* General form styling */
+#rate {
+  padding-top: 10%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+body {
+  background-color: #ddd;
+}
+
 form {
-  width: 100%;
-  max-width: 600px; /* Limit the form width for readability */
-  margin: 20px auto; /* Center the form horizontally */
-  padding: 30px;
-  background-color: rgba(0, 0, 0, 0.24); /* White background */
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  background-color: #ddd;
 }
 
-/* Label styling */
-label {
-  display: block; /* Make labels take up the full width */
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #333;
+.alert {
+  padding-bottom: 10vh;
 }
 
-/* Input and textarea styling (reusing the fancy input styles) */
-input[type="text"],
-input[type="number"],
-textarea {
-  width: 100%;
-  padding: 12px 15px;
+.inputBox {
   margin-bottom: 15px;
-  border: 1px solid #ccc;
-  background-color: rgba(0, 0, 0, 0.31);
-  border-radius: 5px;
-  box-sizing: border-box;
+}
+
+input, textarea, button {
+  width: 30%;
+  padding: 10px;
   font-size: 16px;
-  font-family: sans-serif;
-  color: white;
-  transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus,
-textarea:focus {
-  outline: none;
-  border-color: white;
-  box-shadow: 0 0 5px white;
+.listkritik h1 {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
 }
 
-textarea {
-  resize: vertical;
-  min-height: 120px;
+.listkritik {
+  padding-bottom: 10%;
+  background-color: white;
 }
-
-/* Placeholder styling (consistent with input styles) */
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #aaa;
-}
-
-:-moz-placeholder { /* Firefox 19+ */
-  color: #aaa;
-}
-
-::-moz-placeholder { /* Firefox 18- */
-  color: #aaa;
-}
-
-:-ms-input-placeholder { /* IE 10+ */
-  color: #aaa;
-}
-
-::placeholder { /* Modern Browsers */
-  color: #aaa;
-}
-
-/* Submit button styling */
-button[type="submit"] {
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  padding: 12px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-  background-color: #3e8e41; /* Darker green on hover */
-}
-
-/* Add some spacing between form elements */
-.form-group {
-  margin-bottom: 20px;
-}
-
-/* Style for error messages (for validation) */
-.error-message {
-  color: #f44336; /* Red color for error messages */
-  font-size: 14px;
-  margin-top: -10px;
-  margin-bottom: 10px;
-}
-
 
 table {
-  border-collapse: collapse; /* Remove default spacing between cells */
-  width: 100%; /* Make the table take up the full width of its container */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
-  border-radius: 8px; /* Add rounded corners to the table */
-  overflow: hidden; /* Hide any content that overflows the rounded corners */
+  text-align: center;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto; /* Ini yang bikin tabel di tengah */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 th, td {
-  padding: 12px 15px; /* Add more spacing inside the cells */
-  text-align: left; /* Align text to the left */
-  border-bottom: 1px solid #ddd; /* Add a light border at the bottom of each cell */
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 th {
-  background-color: rgba(0, 0, 0, 0.35); /* Light gray background for the header */
-  font-weight: bold; /* Make the header text bold */
-  text-transform: uppercase; /* Convert header text to uppercase */
+  background-color: rgba(0, 0, 0, 0.35);
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 tr:hover {
-  background-color: rgba(98, 185, 255, 0.35); /* Lighter gray background on hover */
-  transition: background-color 0.2s ease-in-out; /* Smooth transition for hover effect */
+  background-color: rgba(98, 185, 255, 0.35);
+  transition: background-color 0.2s ease-in-out;
 }
 
-/* Add a special style for the last row */
 tr:last-child td {
-  border-bottom: none; /* Remove the bottom border from the last row */
+  border-bottom: none;
 }
