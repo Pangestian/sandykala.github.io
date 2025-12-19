@@ -1,0 +1,131 @@
+/* From Uiverse.io by vikiWayne */ 
+
+.halamangambar {
+    min-height: 105vh; /* 1 layar penuh */
+    background-image: url("background.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.download {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    transition: all 1000ms;
+    font-size: 8px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.2);;
+    top: 20px;
+    left: 30px;
+  }
+  
+  .download:hover {
+    color: white;
+    transform: scale(1.1);
+    outline: 2px solid purple;
+    box-shadow: 4px 5px 17px -4px purple;
+  }
+  
+  .download::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  button:hover::before {
+    width: 250%;
+  }
+  
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+body {
+    background-color: #2b2b2b;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+header .logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 15px 30px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+header ul li a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+header ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    header .logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    header ul {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+        padding: 15px;
+    }
+
+    header ul li a {
+        font-size: 1.1rem;
+    }
+}
