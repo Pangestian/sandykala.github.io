@@ -1,7 +1,49 @@
-/* From Uiverse.io by vikiWayne */ 
+.rank-wrapper {
+    display: flex;
+    justify-content: flex-start; /* tengah */
+    flex-wrap: wrap; /* biar responsif */
+}
+
+.rank-card {
+    margin-top: 60px;
+    margin-left: 60px;
+    width: 200px;
+    height: 400px;
+    padding-left: 20px;
+    background-color: rgba(0, 0, 0, 0.128);;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    color: white;
+    transition: background-color 1s ease; 
+    transition: box-shadow 1s ease; 
+}
+
+.rank-card:hover {
+    background-color: rgba(0, 0, 0, 0.415);
+    box-shadow: 10px 10px 10px white;
+}
+
+.rank-card a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 30px;
+    border-radius: 5px;
+    background-color:rgba(255, 255, 255, 0.052);
+    transition: background-color 1s ease;
+    transition: box-shadow 1s ease;
+}
+
+.rank-card a:hover {
+    background-color: rgb(88, 255, 88);
+    box-shadow: 5px 5px 10px 1px rgb(0, 128, 0);
+}
 
 .halamangambar {
-    min-height: 105vh; /* 1 layar penuh */
+    min-height: 110vh; /* 1 layar penuh */
     background-image: url("background.png");
     background-size: cover;
     background-position: center;
